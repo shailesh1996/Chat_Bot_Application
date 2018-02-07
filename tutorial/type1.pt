@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Chat Bot: ${view_name} </title>
+</head>
+<body>
+	<h2>Message Recieved </h2>
+	<form >
+		<div style="height:50px;width:600px;overflow:auto;border:8px solid yellowgreen;padding:2%" >
+		<h2>${msg}</h2>
+		</div>
+	</form>
+	<br>
+	<h2>Reply to Sender</h2>
+	<form action="${request.route_url('send_reply')}" method="POST">
+		<input type="text" name="msg" value="Reply" >
+		<input type="submit" name="form.reply" value="submit" >
+	</form>
+</body>
+</html>

@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title> P2P </title>
+</head>
+<body>
+
+<form  method="POST" action="${request.current_route_url()}" >
+<h3>Start Chat : <h3>
+<input type="test" name="msg">
+<input type="submit" value="Submit" >
+
+</form>
+</body>
+</html>

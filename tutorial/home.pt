@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title> ${view_name} </title>
+</head>
+<body>
+<h1> Welcome To Chat Application-: </h1>
+<br>
+<br>
+<h2>List Of User's -:</h2>
+
+<form method="POST" action="${request.route_url('send_node')}">
+	<input type="text" name="var_id" value="id"/>
+	<input type="text" name="user" value="user">
+	<input type="submit" value="Submit">
+</form>
+<br>
+<br>
+<br>
+<br>
+<h2>Enter ID For Chat History -:</h2>
+<form method="POST" action="${request.route_url('show_history')}">
+	<input type="text" name="var_id" value="id">
+	<input type="submit" value="Submit">
+</form>
+</body>
+</html>

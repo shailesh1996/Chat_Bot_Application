@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Chat Bot: ${view_name} </title>
+</head>
+<body>
+	<h1>Chat history With ${user_name}  -: </h1><br>
+	<div style="height:400px;width:700px;overflow:auto;border:8px solid yellowgreen;padding:2%" >
+		<h2>${string}</h2>
+	</div>
+	
+</body>
+</html>

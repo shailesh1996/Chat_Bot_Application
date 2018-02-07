@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Quick Tutorial: ${view.view_name} - ${page_title}</title>
+</head>
+<body>
+<h1>Enter The Port Number</h1>
+<form method="POST"
+      action="${request.current_route_url()}">
+    <input name="new_name" type="text" value="port" />
+    <input name="msg" type="text" value="msg" /> 
+    <input type="submit" name="form.submit"  value="Submit"/>
+    
+</form>
+</body>
+</html>
+//some hints
+<p>Go to the <a href="${request.route_url('hello')}">form</a>.</p>
+action="${request.current_route_url()}"
